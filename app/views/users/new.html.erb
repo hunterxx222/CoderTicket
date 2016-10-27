@@ -1,0 +1,15 @@
+<div class='events-header' style='background-image: url(<%= header_background_image_url %>)'>
+  <div class="container">
+    <h1 align="center">Sign Up</h1>
+    <% if @user.errors.present? %>
+      <div class="alert alert-danger"><%= @user.errors.full_messages.to_sentence %></div>
+    <% end %>
+
+    <%= form_for @user, :html => { :class => "form-group" } do |f| %>
+      <%= f.text_field :name, placeholder: "Name", class: "form-control" %>
+      <%= f.text_field :email, placeholder: "Email", class: "form-control" %>
+      <%= f.password_field :password, placeholder: "Password", class: "form-control" %>
+      <%= f.submit 'Create', :class=> "btn btn-primary"%>
+    <% end %>
+  </div>
+</div>
