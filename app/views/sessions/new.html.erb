@@ -1,0 +1,8 @@
+<div class='events-header' style='background-image: url(<%= header_background_image_url %>)'>
+<h1 align="center">Log In</h1>
+
+<%= form_tag sessions_path do %>
+  <%= text_field_tag :email, params[:email], placeholder: "Email" %>
+  <%= password_field_tag :password, nil, placeholder: "Password" %>
+  <%= submit_tag "Log in" %>
+<% end %>
