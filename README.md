@@ -1,6 +1,6 @@
-# Homework 3 - *Name of App*
+# Homework 3 - *Coder Ticket*
 
-**Name of your app** is a Ruby on Rails application that allows users to create and buy tickets to cool events.
+**CoderTicket** is a Ruby on Rails application that allows users to create and buy tickets to cool events.
 
 - Submitted by: **Your Name Here**
 - Time spent: **X** hours

@@ -16,3 +16,8 @@ body {
   background-color: rgb(216, 87, 66);
   border: 2px solid rgb(241, 112, 91);
 }
+
+.field-with-errors {
+  border: 2px solid red;
+  display: inline-block;
+}

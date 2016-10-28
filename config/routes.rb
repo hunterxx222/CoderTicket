@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   resources :users
   root 'events#index'
 
+  resources :venues
   resources :events do
     resources :tickets
   end

@@ -1,9 +1,14 @@
 <div class='events-header' style='background-image: url(<%= header_background_image_url %>)'>
-<h2>Create A New Event</h2>
+  <h2>Create A New Event</h2>
 </div>
+
+<% if @event.errors.present? %>
+  <div class="alert alert-danger"><%= @event.errors.full_messages.to_sentence %></div>
+<% end %>
+
 <div class="container">
     <div class="form-inputs">
-	<%= form_for :event, url: events_path do |f| %>
+	<%= form_for @event, url: events_path do |f| %>
 		<div class="form-group">
 		<%= f.text_field :name, placeholder: "Name", :class => "form-control" %>
 		</div>
@@ -26,7 +31,7 @@
 		<%= f.text_area :extended_html_description,  id: "url", placeholder: "Description", :class => "form-control" %>
 		</div>
 		<div class="form-action">
-		<%= f.submit "Submit", :class => "btn btn-lg btn-block btn-primary-outline" %>
+		<%= f.submit "Submit", :class => "btn btn-primary" %>
 		</div>
 	<% end %>
 	</div>

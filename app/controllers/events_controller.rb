@@ -16,11 +16,13 @@ class EventsController < ApplicationController
   end
 
   def create
-    @event = current_user.events.build event_params
+    @event = current_user.events.build(event_params)
       if @event.save
         flash[:success] = "Event created successfully"
+        redirect_to root_path
       else
         flash[:error] = "Error - Can't create event"
+        render 'new'
       end
   end
 
