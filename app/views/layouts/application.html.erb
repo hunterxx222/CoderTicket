@@ -11,28 +11,20 @@
   <% if flash.any? %>
       <%= flash_messages %>
    <% end %>
-   <% if current_user %>
-   <div class="">
-     Welcome Back, <%= current_user.name %>
-   </div>
-   <% end %>
   <nav class="navbar navbar-fixed-top navbar-dark bg-inverse">
     <a class="navbar-brand" href="<%= root_path %>">Coder Ticket</a>
     <ul class="nav navbar-nav">
       <% if current_user %>
-          <li>Welcome back, <%= current_user.name %> <%= link_to "Log Out", logout_path, method: 'delete', class: "btn btn-secondary" %></li>
           <li class="nav-item"><%= link_to "Profile", user_path(current_user), class: "nav-link" %></li>
-          <li class="nav-item"><%= link_to "New Message", new_message_path, class: "nav-link" %></li>
-          <li class="nav-item"><%= link_to "Inbox", received_messages_path, class: "nav-link" %></li>
-          <li class="nav-item"><%= link_to "Sent", sent_messages_path, class: "nav-link" %></li>
-          <li class="nav-item"><%= link_to "Add Friends", users_path, class: "nav-link" %></li>
+          <li class="nav-item" style="color:white">Welcome back, <%= current_user.name %> <%= link_to "Log Out", logout_path, method: 'delete', class: "btn btn-secondary" %></li>
       <% else %>
-      <li class="nav-item">
-        <%= link_to "Login", login_path, class: "nav-link" %>
-      </li>
-      <li class="nav-item">
-        <%= link_to "Sign Up", new_user_path, class: "nav-link" %>
-      </li>
+        <li class="nav-item">
+          <%= link_to "Login", login_path, class: "nav-link" %>
+        </li>
+        <li class="nav-item">
+          <%= link_to "Sign Up", new_user_path, class: "nav-link" %>
+        </li>
+      <% end %>
     </ul>
   </nav>
 
