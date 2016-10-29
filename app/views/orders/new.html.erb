@@ -48,7 +48,8 @@
                 <tr>
                   <td> <%= type.name %> </td>
                   <td> <%= type.price %> </td>
-                  <td> <%= params[:quantity+'2'] %> </td>
+                  <td style="text-align: center"> <%= params[:quantity]["#{type.id}"] %></td>
+                 <td> <%= hidden_field_tag("quantity[#{type.id}]", params[:quantity]["#{type.id}"]) %></td>
                 </tr>
             <% end %>
           </table>
