@@ -9,6 +9,7 @@ Rails.application.routes.draw do
   resources :venues
   resources :events do
     resources :tickets
+    resources :ticket_types
     collection do
       get :my_events
     end
