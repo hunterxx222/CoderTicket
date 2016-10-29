@@ -1,4 +1,7 @@
-<% @event.each do |event| %>
-  <td><%= event.user_id %></td>
-<% end %>
-<%= @event %>
+  <% @events.in_groups_of(4) do |g| %>
+    <div class="row">
+      <% g.compact.each do |e| %>
+          <%= render partial: 'card', locals: {event: e} %>
+      <% end %>
+    </div>
+  <% end %>

@@ -1,5 +1,5 @@
 <div class='events-header' style='background-image: url(<%= header_background_image_url %>)'>
-  <h2>Create A New Event</h2>
+  <h2>Edit An Event</h2>
 </div>
 
 <% if @event.errors.present? %>
@@ -8,7 +8,7 @@
 
 <div class="container">
     <div class="form-inputs">
-	<%= form_for @event, url: events_path do |f| %>
+	<%= form_for @event do |f| %>
 		<div class="form-group">
 		<%= f.text_field :name, placeholder: "Name", :class => "form-control" %>
 		</div>
