@@ -4,4 +4,5 @@
           <%= render partial: 'card', locals: {event: e} %>
       <% end %>
     </div>
+    <%= link_to "Edit Event", edit_event_path(g.compact), class: "btn btn-primary" %>
   <% end %>

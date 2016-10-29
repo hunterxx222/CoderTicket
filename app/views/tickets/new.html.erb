@@ -33,7 +33,12 @@
           <tr>
             <td> <%= type.name %> </td>
             <td> <%= number_to_currency(type.price, unit: 'VND ', precision: 0) %> </td>
-            <td> <%= select_tag "quantity[#{type.id}]", options_for_select(0..10) %></td>
+          <!-- Restrict buyer to buy more than max ticket type -->
+            <% if type.max_quantity <= 10 %>
+              <td> <%= select_tag "quantity[#{type.id}]", options_for_select(0..type.max_quantity) %></td>
+            <% else %>
+              <td> <%= select_tag "quantity[#{type.id}]", options_for_select(0..10) %></td>
+            <% end %>
           </tr>
           <% end %>
         </table>
