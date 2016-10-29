@@ -5,6 +5,13 @@ class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
   helper_method :current_user
 
+  def require_login
+     unless current_user.present?
+       flash[:error] = 'You must login'
+       redirect_to login_path
+     end
+   end
+
   protected
   def current_user
     return @current_user if @current_user

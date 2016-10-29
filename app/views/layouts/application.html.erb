@@ -15,14 +15,13 @@
     <a class="navbar-brand" href="<%= root_path %>">Coder Ticket</a>
     <ul class="nav navbar-nav">
       <% if current_user %>
-          <!-- <li class="nav-item"><%= link_to "Profile", user_path(current_user), class: "nav-link" %></li> -->
           <div class= "nav-item btn-group">
             <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Events
             </button>
             <div class="dropdown-menu">
               <a class="dropdown-item" href="<%= new_event_path %>">New Event</a>
-              <a class="dropdown-item" href="#">Show Events</a>
+              <a class="dropdown-item" href="<%= my_events_events_path %>">My Events</a>
             </div>
           </div>
 
@@ -32,7 +31,7 @@
               </button>
               <div class="dropdown-menu">
                 <a class="dropdown-item" href="<%= new_event_path %>">New Venue</a>
-                <a class="dropdown-item" href="#">Show Venue</a>
+                <a class="dropdown-item" href="#">My Venue</a>
               </div>
             </div>
           <li class="nav-item"><span class="nav-link" style="color:white">Welcome back, <%= current_user.name %></span></li>
