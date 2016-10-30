@@ -13,7 +13,10 @@ The following **required** functionality is complete:
 
 * [x] Implement required user stories
 * [ ] 10 model tests, 2 route tests, 2 controller tests, 2 view tests.
-
+* [ ] 10 model tests
+* [x] 2 route tests
+* [x] 2 controller tests
+* [ ] 2 view tests
 The person with best test coverage will win a small present from the instructor :)
 
 #### Events
@@ -73,7 +76,7 @@ Describe any challenges encountered while building the app.
 
 ## License
 
-    Copyright [yyyy] [name of copyright owner]
+    Copyright [2016] [name of copyright owner]
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.

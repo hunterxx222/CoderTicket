@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   resources :orders
+  get 'signup' => 'users#new'
   get 'login' => 'sessions#new'
   get 'upcoming' => 'events#index'
   post 'sessions' => 'sessions#create', as: :submit_login
