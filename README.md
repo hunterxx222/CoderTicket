@@ -3,7 +3,7 @@
 **CoderTicket** is a Ruby on Rails application that allows users to create and buy tickets to cool events.
 
 - Submitted by: Toan Ngo
-- Time spent: **25** hours & counting
+- Time spent: **30** hours
 - URL: http://coderschoolticket.herokuapp.com
 - SimpleCov Test Coverage: [coverage/index.html][coverage][index.html]
 
@@ -72,7 +72,7 @@ Describe any challenges encountered while building the app.
 
 ## License
 
-    Copyright [2016] [name of copyright owner]
+    Copyright [2016] [Toan Ngo]
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
