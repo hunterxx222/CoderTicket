@@ -1,6 +1,81 @@
 {
   "RSpec": {
     "coverage": {
+      "/Users/HUNTERTHEGREAT/Desktop/CoderTicket/app/helpers/application_helper.rb": [
+        1,
+        null,
+        1,
+        0,
+        null,
+        null,
+        1,
+        null,
+        0,
+        0,
+        null,
+        0,
+        null,
+        null
+      ],
+      "/Users/HUNTERTHEGREAT/Desktop/CoderTicket/app/helpers/events_helper.rb": [
+        1,
+        1,
+        2,
+        null,
+        null
+      ],
+      "/Users/HUNTERTHEGREAT/Desktop/CoderTicket/app/helpers/orders_helper.rb": [
+        1,
+        null
+      ],
+      "/Users/HUNTERTHEGREAT/Desktop/CoderTicket/app/helpers/sessions_helper.rb": [
+        1,
+        null
+      ],
+      "/Users/HUNTERTHEGREAT/Desktop/CoderTicket/app/helpers/ticket_types_helper.rb": [
+        1,
+        null
+      ],
+      "/Users/HUNTERTHEGREAT/Desktop/CoderTicket/app/helpers/tickets_helper.rb": [
+        1,
+        null
+      ],
+      "/Users/HUNTERTHEGREAT/Desktop/CoderTicket/app/helpers/users_helper.rb": [
+        1,
+        null
+      ],
+      "/Users/HUNTERTHEGREAT/Desktop/CoderTicket/app/helpers/venues_helper.rb": [
+        1,
+        null
+      ],
+      "/Users/HUNTERTHEGREAT/Desktop/CoderTicket/app/models/event.rb": [
+        1,
+        1,
+        1,
+        1,
+        null,
+        1,
+        1,
+        null,
+        1,
+        0,
+        0,
+        null,
+        null,
+        null
+      ],
+      "/Users/HUNTERTHEGREAT/Desktop/CoderTicket/app/models/venue.rb": [
+        1,
+        1,
+        1,
+        null
+      ],
+      "/Users/HUNTERTHEGREAT/Desktop/CoderTicket/app/models/category.rb": [
+        1,
+        1,
+        1,
+        null
+      ],
       "/Users/HUNTERTHEGREAT/Desktop/CoderTicket/app/controllers/application_controller.rb": [
         0,
         0,
@@ -245,76 +320,7 @@
         0,
         0
       ],
-      "/Users/HUNTERTHEGREAT/Desktop/CoderTicket/app/helpers/application_helper.rb": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ],
-      "/Users/HUNTERTHEGREAT/Desktop/CoderTicket/app/helpers/events_helper.rb": [
-        0,
-        0,
-        0,
-        0,
-        0
-      ],
-      "/Users/HUNTERTHEGREAT/Desktop/CoderTicket/app/helpers/orders_helper.rb": [
-        0,
-        0
-      ],
-      "/Users/HUNTERTHEGREAT/Desktop/CoderTicket/app/helpers/sessions_helper.rb": [
-        0,
-        0
-      ],
-      "/Users/HUNTERTHEGREAT/Desktop/CoderTicket/app/helpers/ticket_types_helper.rb": [
-        0,
-        0
-      ],
-      "/Users/HUNTERTHEGREAT/Desktop/CoderTicket/app/helpers/tickets_helper.rb": [
-        0,
-        0
-      ],
-      "/Users/HUNTERTHEGREAT/Desktop/CoderTicket/app/helpers/users_helper.rb": [
-        0,
-        0
-      ],
-      "/Users/HUNTERTHEGREAT/Desktop/CoderTicket/app/helpers/venues_helper.rb": [
-        0,
-        0
-      ],
       "/Users/HUNTERTHEGREAT/Desktop/CoderTicket/app/models/application_record.rb": [
-        0,
-        0,
-        0
-      ],
-      "/Users/HUNTERTHEGREAT/Desktop/CoderTicket/app/models/category.rb": [
-        0,
-        0,
-        0,
-        0
-      ],
-      "/Users/HUNTERTHEGREAT/Desktop/CoderTicket/app/models/event.rb": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
         0,
         0,
         0
@@ -349,14 +355,8 @@
         0,
         0,
         0
-      ],
-      "/Users/HUNTERTHEGREAT/Desktop/CoderTicket/app/models/venue.rb": [
-        0,
-        0,
-        0,
-        0
       ]
     },
-    "timestamp": 1477802591
+    "timestamp": 1477807479
   }
 }

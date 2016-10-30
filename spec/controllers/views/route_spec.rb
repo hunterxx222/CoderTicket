@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe "routing", :type => :routing do
+RSpec.describe "sign up and sign in routing", :type => :routing do
   it "routes /signup to users#new" do
     expect(:get => "/signup").to route_to(
                                       :controller => "users",

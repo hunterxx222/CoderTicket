@@ -1,6 +1,7 @@
 <div class='events-header' style='background-image: url(<%= header_background_image_url %>)'>
   <div class="container">
     <h1 align="center">Sign Up</h1>
+    <h3>Register now to purchase tickets</h3>
     <% if @user.errors.present? %>
       <div class="alert alert-danger"><%= @user.errors.full_messages.to_sentence %></div>
     <% end %>
