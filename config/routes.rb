@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   resources :orders
   get 'login' => 'sessions#new'
+  get 'upcoming' => 'events#index'
   post 'sessions' => 'sessions#create', as: :submit_login
   delete 'logout' => 'sessions#destroy'
   resources :sessions, only: [:new, :create]
@@ -12,7 +13,7 @@ Rails.application.routes.draw do
     resources :tickets
     resources :ticket_types
     resources :orders
-    
+
     collection do
       get :my_events
     end

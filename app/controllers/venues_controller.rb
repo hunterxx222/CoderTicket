@@ -4,7 +4,7 @@ class VenuesController < ApplicationController
   end
 
   def create
-    @venue = current_user.venues.build(venue_params)
+    @venue = Venue.new(venue_params)
       if @venue.save
         flash[:success] = "Venue created successfully"
         redirect_to root_path
@@ -15,6 +15,6 @@ class VenuesController < ApplicationController
   end
 
   def venue_params
-    params.require(:venue).permit(:starts_at, :ends_at, :venue_id, :hero_image_url, :extended_html_description, :category_id, :name)
+    params.require(:venue).permit(:name, :region_id, :full_address)
   end
 end

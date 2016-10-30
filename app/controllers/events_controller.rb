@@ -4,7 +4,7 @@ class EventsController < ApplicationController
     if params[:search]
       @events = Event.where(['name ILIKE ?', "%#{params[:search]}%"])
     else
-      @events = Event.all
+      @events = Event.where("starts_at > ?", Time.now )
     end
   end
 

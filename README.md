@@ -3,8 +3,8 @@
 **CoderTicket** is a Ruby on Rails application that allows users to create and buy tickets to cool events.
 
 - Submitted by: Toan Ngo
-- Time spent: **X** hours
-- URL: **Insert your Heroku URL here**
+- Time spent: **25** hours & counting
+- URL: http://coderschoolticket.herokuapp.com
 - SimpleCov Test Coverage: [coverage/index.html][coverage][index.html]
 
 ## User Stories
@@ -18,7 +18,7 @@ The person with best test coverage will win a small present from the instructor 
 
 #### Events
 
-* [ ] Users can see a list of upcoming events. Past events should not be shown.
+* [x] Users can see a list of upcoming events. Past events should not be shown.
     * **HINT**: Good candidate for a test. You can write test first --> fail --> fast similar to demo
     * Suggestions:
         * Implement `/upcoming` route test to go to 'events#index'
@@ -47,7 +47,7 @@ The person with best test coverage will win a small present from the instructor 
         * Write a test to make sure only an event creator can publish an event
 * [x] Users can create ticket types for that event.
     * **HINT**: make sure you understand what a ticket tpe is. Ask if not clear.
-* [ ] Users can create venues.
+* [x] Users can create venues.
 * [ ] An event must have at least one `ticket_type` defined before it can be published.
     * **HINT**: add `Event#have_enough_ticket_types?` (and test it)
 * [x] User can see a list of events he or she has created.
