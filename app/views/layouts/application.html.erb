@@ -7,10 +7,7 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-  <%= flash_messages %>
-  <% if flash.any? %>
-      <%= flash_messages %>
-   <% end %>
+
   <nav class="navbar navbar-fixed-top navbar-dark bg-inverse">
     <a class="navbar-brand" href="<%= root_path %>">Coder Ticket</a>
     <ul class="nav navbar-nav">
@@ -45,9 +42,10 @@
       <% end %>
     </ul>
   </nav>
-
-
-<%= yield %>
+<div style="margin-top:80px">
+  <%= flash_messages %>
+  <%= yield %>
+</div>
 
 </body>
 </html>

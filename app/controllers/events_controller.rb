@@ -4,7 +4,7 @@ class EventsController < ApplicationController
     if params[:search]
       @events = Event.where(['name ILIKE ?', "%#{params[:search]}%"])
     else
-      @events = Event.where("starts_at > ?", Time.now )
+      @events = Event.where("starts_at > ? and status = true", Time.now )
     end
   end
 
@@ -45,6 +45,25 @@ class EventsController < ApplicationController
        flash[:notice] = 'Event updated'
        redirect_to event_path(@event)
      end
+  end
+
+  def publish
+    @event = Event.find(params[:event_id])
+
+    if @event.ticket_types && @event.ticket_types.count > 0
+      @event.status = true
+
+      if @event.save
+        flash[:success] = 'Event published!'
+        redirect_to root_path
+      else
+        flash[:error] = 'An error occured while publishing event.'
+        redirect_to root_path
+      end
+    else
+      flash[:error] = 'An event must have at least one ticket type before it can be published.'
+      redirect_to root_path
+    end
   end
 
   def event_params

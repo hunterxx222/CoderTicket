@@ -4,6 +4,8 @@ Rails.application.routes.draw do
   get 'upcoming' => 'events#index'
   post 'sessions' => 'sessions#create', as: :submit_login
   delete 'logout' => 'sessions#destroy'
+  get 'publish/:event_id' => 'events#publish'
+
   resources :sessions, only: [:new, :create]
   resources :users
   root 'events#index'

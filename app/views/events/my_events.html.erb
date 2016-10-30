@@ -2,7 +2,10 @@
     <div class="row">
       <% g.compact.each do |e| %>
           <%= render partial: 'card', locals: {event: e} %>
+          <% unless e.status %>
+            <%= link_to "Publish Event", "/publish/#{e.id}", class: "btn btn-primary" %>
+          <% end %>
+          <div style="position:absolute;"><%= link_to "Edit Event", edit_event_path(e), class: "btn btn-primary" %></div>
       <% end %>
     </div>
-    <%= link_to "Edit Event", edit_event_path(g.compact), class: "btn btn-primary" %>
   <% end %>
