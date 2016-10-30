@@ -6,7 +6,7 @@
 - Time spent: **30** hours
 - URL: http://coderschoolticket.herokuapp.com
 - SimpleCov Test Coverage: [coverage/index.html](coverage/index.html)
-- Walkthrough ![Video Walkthrough](hanoi_roadhouse.gif)
+- Walkthrough ![Video Walkthrough](walkthrough.gif)
 
 ## User Stories
 
